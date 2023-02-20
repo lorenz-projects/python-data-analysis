@@ -16,4 +16,4 @@ query = text("SELECT * FROM transactions")
 
 df = pd.read_sql(query, con=db_connection)
 
-print(df)
+print(df.info())
